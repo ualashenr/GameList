@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Configurações do Header */
+header {
+  padding: 20px;
+}
+
+header>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo a {
+  font-size: 25px;
+  color: #1b20f9;
+  text-decoration: none;
+}
+
+.borda {
+  border-top: 2px solid #1b20f9;
+}
+
+/* Configurações do layout do Game */
+main.game-layout .game {
+  padding: 40px 4%;
+  display: flex;
+}
+
+main.game-layout .flex {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main.game-layout .game-img img {
+  max-height: 1000px;
+  margin: 0 auto;
+}
+
+.game .game-description {
+  padding: 0px 4%;
+  color: white;
+}
+
+.game-description .title {
+  font-size: 25px;
+}
+
+.game-description .title span {
+  margin: 25px;
+}
+
+.game-description .title span i {
+  color: yellow;
+  margin: 8px;
+}
+
+.game-description .game-year {
+  font-size: 20px;
+}
+
+.game-description p {
+  padding-top: 40px;
+  font-size: 18px;
+  color: white;
+}
+
+.game-genres {
+  position: fixed;
+  margin-top: 40px;
+}
+
+.game-genres span {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  padding: 9px 10px;
+  margin-right: 20px;
+  border: 2px;
+  border-radius: 4px;
+  background-color: #313131;
+}
+
+.game-long-description {
+  color: white;
+  max-width: 100%;
+  padding: 20px 4%;
+}
+
+.game-long-description p {
+  font-size: 16px;
+  line-height: 1.5;
+}

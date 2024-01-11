@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE-FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <!-- END GOOGLE-FONTS -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- END BOOTSTRAP ICONS -->
+
+    <title>Game list</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="interface">
+        <div class="logo">
+            <a href="#">Game List</a>
+        </div>
+    </div>
+  </header>
+
+  <div class="line-header borda">
+  </div>
+
+  <main class="game-layout">
+    <div class="interface">
+      <div class="flex">
+        @if (selectedGame){
+        <div class="game">
+          <div class="game-img">
+            <img [src]="selectedGame.imgUrl" alt="gameImage">
+          </div>
+          <div class="game-description">
+            <h2 class="title">{{ selectedGame.title }}<span class="star"><i
+                class="bi bi-star-fill"></i>{{ selectedGame.score }}</span></h2>
+            <span class="game-year">{{ selectedGame.year }}</span>
+            <p>{{ selectedGame.shortDescription }}</p>
+            <div class="game-genres">
+            @for (genre of selectedGame.genre.split(','); track $index) {
+              <span class="genre">{{ genre.trim() }}</span>
+            }
+            </div>
+          </div>
+        </div>
+        <div class="game-long-description">
+            <p>{{ selectedGame.longDescription }}</p>
+        </div>
+      }
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

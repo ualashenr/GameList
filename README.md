@@ -1,5 +1,5 @@
 # GameList
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/ualashenr/MoviesRank/blob/master/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/ualashenr/GameList/blob/master/LICENSE) 
 
 # Sobre o projeto
 Exibe uma lista de jogos sendo possível mudar a ordem dos jogos na lista, exibir um jogo específico e navegar entre as listas.
